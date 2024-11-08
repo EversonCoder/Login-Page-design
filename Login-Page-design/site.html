@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+@font-face {
+	font-family: "nunito";
+	src: url("BebasNeue-Regular.woff2")
+			format("woff2");
+	font-weight: bold;
+	font-style:normal;
+}
+ 
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    width: 500px;
+    background: url('Itachk.gif');
+    color: white;
+    border-radius: 20px ;
+    box-shadow: 0px 0px 20px rgba(255, 251, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+form{
+    font-family: nunito;
+    text-shadow: rgb(25, 26, 25) 0.1em 0.1em 0.2em;
+    display:block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+h1 {
+    font-weight: normal;
+    font-size: 34px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    margin-bottom: 60px;
+
+}
+label {
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+
+}
+
+input{
+    box-shadow:  rgb(25, 26, 25) 0.1em 0.1em 0.2em;
+    background: rgba(255,255,255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+button{
+
+    font-family: "nunito";
+    background: rgba(230, 135, 12, 0.548);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    border-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: white;
+}
+button:hover{
+    color:rgb(44, 44, 133);
+    background-color: rgb(233, 17, 17);
+
+}
+#cor:hover{
+    color:rgba(204, 115, 31, 0.87);
+}
+body{background: url("itachy.jpg");}
+</style>
+</head>
+
+<body>
+    <div class="login">
+        <form>
+            <h1>LOGIn</h1>
+            <label>Usuário:</label>
+            <input type="text">
+            <label>senha:</label>
+            <input type="password">
+            <label id="cor"><ins>Esqueceu a senha?</ins></label>
+            <button type="submit" value="enviar">Entrar</button>
+        </form>
+    
+    </div>
+</body>
+
+</html>
